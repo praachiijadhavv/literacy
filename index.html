@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Saathi | Digital Literacy for Senior Citizens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-icon">🌐</span>
+        <div>
+            <h2>Digital Saathi</h2>
+            <small>Learn • Practice • Stay Safe</small>
+        </div>
+    </div>
+
+    <div class="accessibility">
+        <button onclick="decreaseText()">A−</button>
+        <button onclick="normalText()">A</button>
+        <button onclick="increaseText()">A+</button>
+
+        <select id="language">
+            <option>English</option>
+            <option>मराठी</option>
+            <option>हिंदी</option>
+        </select>
+
+        <button onclick="readPage()">🔊 Read Aloud</button>
+    </div>
+</header>
+
+<nav>
+    <a class="active" href="index.html">🏠 Home</a>
+    <a href="learn.html">📚 Learn</a>
+    <a href="practice.html">🎮 Practice</a>
+    <a href="safety.html">🛡️ Safety</a>
+    <a href="progress.html">🏆 My Progress</a>
+</nav>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="welcome-badge">
+            👋 Welcome to your Digital Learning Journey
+        </div>
+
+        <h1>
+            Technology Made
+            <span>Simple.</span>
+        </h1>
+
+        <p>
+            Learn how to use smartphones, WhatsApp, digital payments,
+            the internet and online services safely — one simple step
+            at a time.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="learn.html" class="primary-btn">
+                📚 Start Learning
+            </a>
+
+            <a href="practice.html" class="secondary-btn">
+                🎮 Practice Skills
+            </a>
+        </div>
+
+        <div class="trust-message">
+            ✓ No login required &nbsp;
+            ✓ No real money &nbsp;
+            ✓ Safe practice
+        </div>
+
+    </div>
+
+    <div class="phone-area">
+
+        <div class="phone">
+
+            <div class="phone-top">
+                <span>9:25</span>
+                <span>📶 🔋</span>
+            </div>
+
+            <h3>Hello! 👋</h3>
+
+            <p>What would you like to learn today?</p>
+
+            <div class="phone-apps">
+
+                <div>
+                    <span>📱</span>
+                    <small>Phone</small>
+                </div>
+
+                <div>
+                    <span>💬</span>
+                    <small>Message</small>
+                </div>
+
+                <div>
+                    <span>💳</span>
+                    <small>UPI</small>
+                </div>
+
+                <div>
+                    <span>🛡️</span>
+                    <small>Safety</small>
+                </div>
+
+            </div>
+
+            <button onclick="location.href='learn.html'">
+                Start Today's Lesson →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="confidence">
+
+    <div>
+        <p>Your Digital Confidence</p>
+        <h2 id="confidenceNumber">0%</h2>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressMessage">
+        Complete your first lesson to start building your digital confidence!
+    </p>
+
+</section>
+
+
+<section class="section-heading">
+
+    <span>📚 LEARNING MADE SIMPLE</span>
+
+    <h2>What would you like to learn?</h2>
+
+    <p>
+        Choose a topic below. Every lesson contains simple instructions,
+        practice activities and a short quiz.
+    </p>
+
+</section>
+
+
+<section class="learning-grid">
+
+    <div class="learning-card">
+        <div class="card-icon">📱</div>
+
+        <div class="difficulty">BEGINNER</div>
+
+        <h3>Smartphone Basics</h3>
+
+        <p>
+            Learn Wi-Fi, brightness, volume, apps, contacts and other
+            important phone settings.
+        </p>
+
+        <a href="learn.html#smartphone">
+            Start Lesson →
+        </a>
+    </div>
+
+
+    <div class="learning-card">
+        <div class="card-icon">💬</div>
+
+        <div class="difficulty">BEGINNER</div>
+
+        <h3>WhatsApp & Messages</h3>
+
+        <p>
+            Practice sending messages, photos, voice notes and making
+            video calls safely.
+        </p>
+
+        <a href="learn.html#whatsapp">
+            Start Lesson →
+        </a>
+    </div>
+
+
+    <div class="learning-card">
+        <div class="card-icon">💳</div>
+
+        <div class="difficulty medium">IMPORTANT</div>
+
+        <h3>UPI & Digital Payments</h3>
+
+        <p>
+            Learn QR payments safely using our practice payment simulator.
+            No real money is used.
+        </p>
+
+        <a href="practice.html">
+            Practice Payment →
+        </a>
+    </div>
+
+
+    <div class="learning-card">
+        <div class="card-icon">🛡️</div>
+
+        <div class="difficulty safety">SAFETY</div>
+
+        <h3>Online Safety</h3>
+
+        <p>
+            Learn how to recognize fake calls, suspicious links,
+            OTP scams and online fraud.
+        </p>
+
+        <a href="safety.html">
+            Learn Safety →
+        </a>
+    </div>
+
+
+    <div class="learning-card">
+        <div class="card-icon">🌐</div>
+
+        <div class="difficulty">BEGINNER</div>
+
+        <h3>Internet Basics</h3>
+
+        <p>
+            Learn Google Search, YouTube, Maps, websites and how to
+            identify trustworthy information.
+        </p>
+
+        <a href="learn.html#internet">
+            Start Lesson →
+        </a>
+    </div>
+
+
+    <div class="learning-card">
+        <div class="card-icon">🏥</div>
+
+        <div class="difficulty">USEFUL</div>
+
+        <h3>Digital Health</h3>
+
+        <p>
+            Practice booking appointments, using health services
+            and saving emergency contacts.
+        </p>
+
+        <a href="learn.html#health">
+            Start Lesson →
+        </a>
+    </div>
+
+</section>
+
+
+<section class="practice-banner">
+
+    <div>
+        <span>✨ UNIQUE FEATURE</span>
+
+        <h2>Practice Without Fear</h2>
+
+        <p>
+            Try digital activities in our safe practice environment.
+            You cannot accidentally send real money or make a real transaction.
+        </p>
+
+        <a href="practice.html" class="primary-btn">
+            Enter Practice Zone →
+        </a>
+    </div>
+
+    <div class="practice-icons">
+        <span>📱</span>
+        <span>💬</span>
+        <span>💳</span>
+        <span>🔍</span>
+    </div>
+
+</section>
+
+
+<section class="scam-section">
+
+    <div class="scam-icon">🕵️</div>
+
+    <div>
+
+        <span>SCAM DETECTIVE</span>
+
+        <h2>Can You Spot a Scam?</h2>
+
+        <p>
+            Test your digital safety skills with realistic fake calls,
+            messages and payment requests.
+        </p>
+
+        <a href="safety.html" class="dark-btn">
+            Play Scam Detective
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="slow-mode">
+
+    <div class="turtle">🐢</div>
+
+    <div>
+        <h2>Need More Time? That's Okay!</h2>
+
+        <p>
+            Turn on <strong>Teach Me Slowly</strong> mode.
+            We'll show one instruction at a time with larger text
+            and voice guidance.
+        </p>
+    </div>
+
+    <button onclick="enableSlowMode()">
+        🐢 Teach Me Slowly
+    </button>
+
+</section>
+
+
+<section class="help-section">
+
+    <h2>Need Help?</h2>
+
+    <p>
+        If something online is confusing or suspicious, choose a problem
+        and we'll guide you.
+    </p>
+
+    <div class="help-grid">
+
+        <button onclick="showHelp('otp')">
+            🔐 Someone asked for my OTP
+        </button>
+
+        <button onclick="showHelp('call')">
+            📞 I received a suspicious call
+        </button>
+
+        <button onclick="showHelp('link')">
+            🔗 I clicked an unknown link
+        </button>
+
+        <button onclick="showHelp('payment')">
+            💰 Payment problem
+        </button>
+
+    </div>
+
+    <div id="helpResult"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <h3>🌐 Digital Saathi</h3>
+        <p>
+            Helping senior citizens become confident and safe
+            in the digital world.
+        </p>
+    </div>
+
+    <div>
+        <strong>Quick Links</strong>
+        <a href="learn.html">Learn</a>
+        <a href="practice.html">Practice</a>
+        <a href="safety.html">Online Safety</a>
+    </div>
+
+    <div>
+        <strong>Remember</strong>
+        <p>🔐 Never share OTP</p>
+        <p>💳 Never share UPI PIN</p>
+        <p>🔗 Avoid unknown links</p>
+    </div>
+
+</footer>
+
+<button class="floating-help" onclick="scrollToHelp()">
+    🆘 Help Me
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
